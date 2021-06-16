@@ -11,7 +11,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.StringTokenizer;
 
-        import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AppTest {

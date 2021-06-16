@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
             withMaven{
-                bat 'echo "Build Started"'
+                bat 'echo "Build Starte"'
                 bat 'mvn clean install'
                 bat 'echo "Build Ended"'
                     }
