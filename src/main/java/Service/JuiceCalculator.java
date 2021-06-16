@@ -18,7 +18,7 @@ public class JuiceCalculator {
 
     }
 
-    private void calculateCost(String order){
+    public Double calculateCost(String order){
         Double exclusionCost= new Double(0);
         Double cost = new Double(0);
         try {
@@ -40,13 +40,14 @@ public class JuiceCalculator {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return cost;
     }
 
     public void getOrders(String orders){
             calculateCost(orders);
     }
 
-    private boolean validateOrder(String order) throws Exception {
+    public boolean validateOrder(String order) throws Exception {
 
         boolean isValid = true;
         if (order.split(",").length > 1){
