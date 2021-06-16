@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    environment{
-    PATH = ""
-    }
+
     stages {
         stage('Build') {
             steps {
