@@ -3,11 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "HelloWorld"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
+                sh 'echo "Build Started"'
+                sh 'mvn clean install'
+                sh 'echo "Build Ended"'
+
             }
         }
     }
